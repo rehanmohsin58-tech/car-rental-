@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fleet - Rehan Car Rental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Fleet Page - Cyan Theme */
+        :root {
+            --primary: #0d1b2a;
+            --secondary: #1b263b;
+            --accent: #00d4ff;
+            --light: #e0e1dd;
+            --dark: #050a0f;
+            --text-muted: #778da9;
+        }
+        body { font-family: 'Outfit', sans-serif; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Rehan<span>Cars</span></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet.html" class="active">Fleet</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="cta-btn">Book Now</a>
+    </header>
+
+    <section class="page-header">
+        <h1>Our Premium Fleet</h1>
+        <p>Choose from our extensive collection of luxury vehicles. From executive sedans to high-performance sports cars.</p>
+    </section>
+
+    <div class="filter-bar" style="padding: 1.5rem 5%; background: var(--primary); display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; position: sticky; top: 70px; z-index: 100; border-bottom: 1px solid rgba(0, 212, 255, 0.1);">
+        <button class="filter-btn active" style="background: transparent; border: 1px solid var(--text-muted); color: var(--light); padding: 0.5rem 1.5rem; border-radius: 30px; cursor: pointer; transition: all 0.3s;">All Vehicles</button>
+        <button class="filter-btn" style="background: transparent; border: 1px solid var(--text-muted); color: var(--light); padding: 0.5rem 1.5rem; border-radius: 30px; cursor: pointer; transition: all 0.3s;">Luxury Sedans</button>
+        <button class="filter-btn" style="background: transparent; border: 1px solid var(--text-muted); color: var(--light); padding: 0.5rem 1.5rem; border-radius: 30px; cursor: pointer; transition: all 0.3s;">Sports Cars</button>
+        <button class="filter-btn" style="background: transparent; border: 1px solid var(--text-muted); color: var(--light); padding: 0.5rem 1.5rem; border-radius: 30px; cursor: pointer; transition: all 0.3s;">SUVs</button>
+    </div>
+
+    <section class="section section-dark">
+        <div class="grid-3">
+            <div class="car-card">
+                <div class="car-image"><span class="car-badge">Featured</span></div>
+                <div class="car-info">
+                    <div class="car-category" style="color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Luxury Sedan</div>
+                    <h3>Mercedes-Benz S-Class</h3>
+                    <div class="car-specs"><span>⚡ Auto</span><span>⛽ Petrol</span><span>👤 4 Seats</span></div>
+                    <div class="car-price"><div class="price">$150<span>/day</span></div><a href="contact.html" class="book-btn">Book Now</a></div>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><span class="car-badge">Popular</span></div>
+                <div class="car-info">
+                    <div class="car-category" style="color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Sports Car</div>
+                    <h3>Porsche 911 Carrera</h3>
+                    <div class="car-specs"><span>⚡ Auto</span><span>⛽ Petrol</span><span>👤 2 Seats</span></div>
+                    <div class="car-price"><div class="price">$250<span>/day</span></div><a href="contact.html" class="book-btn">Book Now</a></div>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><span class="car-badge">SUV</span></div>
+                <div class="car-info">
+                    <div class="car-category" style="color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Premium SUV</div>
+                    <h3>Range Rover Sport</h3>
+                    <div class="car-specs"><span>⚡ Auto</span><span>⛽ Diesel</span><span>👤 5 Seats</span></div>
+                    <div class="car-price"><div class="price">$180<span>/day</span></div><a href="contact.html" class="book-btn">Book Now</a></div>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><span class="car-badge">Electric</span></div>
+                <div class="car-info">
+                    <div class="car-category" style="color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Electric</div>
+                    <h3>Tesla Model S Plaid</h3>
+                    <div class="car-specs"><span>⚡ Auto</span><span>🔋 Electric</span><span>👤 5 Seats</span></div>
+                    <div class="car-price"><div class="price">$160<span>/day</span></div><a href="contact.html" class="book-btn">Book Now</a></div>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><span class="car-badge">Executive</span></div>
+                <div class="car-info">
+                    <div class="car-category" style="color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Luxury Sedan</div>
+                    <h3>BMW 7 Series</h3>
+                    <div class="car-specs"><span>⚡ Auto</span><span>⛽ Petrol</span><span>👤 4 Seats</span></div>
+                    <div class="car-price"><div class="price">$140<span>/day</span></div><a href="contact.html" class="book-btn">Book Now</a></div>
+                </div>
+            </div>
+            <div class="car-card">
+                <div class="car-image"><span class="car-badge">Convertible</span></div>
+                <div class="car-info">
+                    <div class="car-category" style="color: var(--accent); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Sports Car</div>
+                    <h3>Mercedes-AMG GT</h3>
+                    <div class="car-specs"><span>⚡ Auto</span><span>⛽ Petrol</span><span>👤 2 Seats</span></div>
+                    <div class="car-price"><div class="price">$220<span>/day</span></div><a href="contact.html" class="book-btn">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Rehan Cars</h4>
+                <p style="color: var(--text-muted);">Premium car rental service with the best prices and exceptional customer support.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fleet.html">Fleet</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 123 Main Street</li>
+                    <li>📞 +1 234 567 890</li>
+                    <li>✉️ info@rehancars.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Rehan Car Rental. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+                <div class="car-info">
+                    <div class="car-category">Sports Car</div>
+                    <h3>Porsche 911 Carrera</h3>
+                    <div class="car-specs">
+                        <span>⚡ Auto</span>
+                        <span>⛽ Petrol</span>
+                        <span>👤 2 Seats</span>
+                    </div>
+                    <div class="car-features">
+                        <span>Sport Exhaust</span>
+                        <span>Carbon Fiber</span>
+                        <span>Track Mode</span>
+                    </div>
+                    <div class="car-price">
+                        <div class="price">$250<span>/day</span></div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <span class="car-badge">SUV</span>
+                </div>
+                <div class="car-info">
+                    <div class="car-category">Premium SUV</div>
+                    <h3>Range Rover Sport</h3>
+                    <div class="car-specs">
+                        <span>⚡ Auto</span>
+                        <span>⛽ Diesel</span>
+                        <span>👤 5 Seats</span>
+                    </div>
+                    <div class="car-features">
+                        <span>Off-Road Mode</span>
+                        <span>Panoramic Roof</span>
+                        <span>Air Suspension</span>
+                    </div>
+                    <div class="car-price">
+                        <div class="price">$180<span>/day</span></div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <span class="car-badge">Electric</span>
+                </div>
+                <div class="car-info">
+                    <div class="car-category">Electric</div>
+                    <h3>Tesla Model S Plaid</h3>
+                    <div class="car-specs">
+                        <span>⚡ Auto</span>
+                        <span>🔋 Electric</span>
+                        <span>👤 5 Seats</span>
+                    </div>
+                    <div class="car-features">
+                        <span>Autopilot</span>
+                        <span>Fast Charging</span>
+                        <span>Premium Audio</span>
+                    </div>
+                    <div class="car-price">
+                        <div class="price">$160<span>/day</span></div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <span class="car-badge">Executive</span>
+                </div>
+                <div class="car-info">
+                    <div class="car-category">Luxury Sedan</div>
+                    <h3>BMW 7 Series</h3>
+                    <div class="car-specs">
+                        <span>⚡ Auto</span>
+                        <span>⛽ Petrol</span>
+                        <span>👤 4 Seats</span>
+                    </div>
+                    <div class="car-features">
+                        <span>Massage Seats</span>
+                        <span>Ambient Light</span>
+                        <span>Executive Pack</span>
+                    </div>
+                    <div class="car-price">
+                        <div class="price">$140<span>/day</span></div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car-card">
+                <div class="car-image">
+                    <span class="car-badge">Convertible</span>
+                </div>
+                <div class="car-info">
+                    <div class="car-category">Sports Car</div>
+                    <h3>Mercedes-AMG GT</h3>
+                    <div class="car-specs">
+                        <span>⚡ Auto</span>
+                        <span>⛽ Petrol</span>
+                        <span>👤 2 Seats</span>
+                    </div>
+                    <div class="car-features">
+                        <span>Convertible</span>
+                        <span>Sport Mode</span>
+                        <span>Performance+</span>
+                    </div>
+                    <div class="car-price">
+                        <div class="price">$220<span>/day</span></div>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Rehan Car Rental. All rights reserved.</p>
+    </footer>
+</body>
+</html>
