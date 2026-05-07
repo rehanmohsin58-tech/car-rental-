@@ -23,8 +23,21 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <a href="contact.html" class="cta-btn">Book Now</a>
 </header>
+
+<nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="fleet.html" class="active">Fleet</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
 <section class="page-header">
     <h1>Our <span>Fleet</span></h1>
@@ -174,3 +187,21 @@ hppzhsBaZSJgC0C/MCw5NGlhBGHB4JVpSZs2YFy2mSigC/UEpSHNMKR6ZYmLro2XsyPvD/APWLy1Icni
         <p>© 2024 Rehan Car Rental. All rights reserved.</p>
     </div>
 </footer>
+
+<script>
+    function toggleMenu() {
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+        hamburger.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+    }
+
+    document.querySelectorAll('.mobile-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.querySelector('.hamburger').classList.remove('active');
+            document.getElementById('mobileNav').classList.remove('active');
+        });
+    });
+</script>
+</body>
+</html>

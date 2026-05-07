@@ -21,8 +21,21 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <a href="contact.html" class="cta-btn">Book Now</a>
     </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="index.html" class="active">Home</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <section class="hero">
         <div class="hero-content">
@@ -80,7 +93,7 @@
     </section>
 
     <section class="section section-light">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 2rem 5%;">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 0 1.25rem;">
             <h2>Ready to Drive?</h2>
             <p style="color: var(--text-muted); margin-bottom: 2rem;">Browse our fleet and find the perfect car for your journey</p>
             <a href="fleet.html" class="cta-btn">View Our Fleet</a>
@@ -91,7 +104,7 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>Rehan Cars</h4>
-                <p style="color: var(--text-muted);">Premium car rental service with competitive prices and exceptional customer support.</p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Premium car rental service with competitive prices and exceptional customer support.</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
@@ -125,5 +138,22 @@
             <p>&copy; 2024 Rehan Car Rental. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const mobileNav = document.getElementById('mobileNav');
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+        }
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.mobile-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.hamburger').classList.remove('active');
+                document.getElementById('mobileNav').classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
